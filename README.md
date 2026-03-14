@@ -32,7 +32,6 @@
 ## 🔍 Data Structure & Extraction (การวิเคราะห์โครงสร้างข้อมูล)
 ระบบถูกออกแบบให้สามารถอ่านและสกัดข้อมูลจากไฟล์รายงานแรงสั่นสะเทือน (.txt) ได้โดยอัตโนมัติ ดังนี้:
 
-![Data Structure]()
 
 ### 📍 ส่วนประกอบสำคัญที่นำมาใช้ใน Code:
 1. **Equipment & Meas. Point:** - **ในไฟล์:** `Cooling Pump`, `Motor Outboard Horizontal (M1H)`
@@ -44,7 +43,16 @@
 4. **Waveform Data (Time & Amplitude):**
    - **ในไฟล์:** ตารางค่าตัวเลขด้านล่าง
    - **การใช้งาน:** นี่คือ **Input หลักของ AI** โดยระบบจะทำ Data Cleaning เพื่อเปลี่ยนตัวเลขในรูปแบบข้อความให้เป็น Array ตัวเลขสำหรับส่งเข้าโมเดล **XGBoost**
+     
+### 🔍 การสกัดข้อมูลจากไฟล์ (Data Extraction Structure)
+ระบบจะทำการ Parse ข้อมูลจากไฟล์ดิบเพื่อนำมาเข้าโมเดล AI ดังนี้:
 
+| ข้อมูลในไฟล์ | สิ่งที่ AI นำไปใช้ | ประโยชน์ในโปรเจกต์ |
+|:---|:---|:---|
+| **Equipment** | Validation Logic | เช็กว่าไฟล์ที่อัปโหลดตรงกับเครื่องจักรที่เลือกไหม |
+| **Meas. Point** | Feature Selection | ระบุตำแหน่ง (M1H) เพื่อเลือกเกณฑ์ ISO ที่ถูกต้อง |
+| **Date/Time** | Time-Series Index | ใช้จัดเรียงลำดับเวลาเพื่อดูแนวโน้ม (Trend) แรงสั่น |
+| **Amplitude** | Raw Input Data | ค่าตัวเลขที่ส่งให้โมเดล **XGBoost** ประมวลผลพยากรณ์ |
 
 ## 🛠️ Technology Stack
 - **Language:** Python
