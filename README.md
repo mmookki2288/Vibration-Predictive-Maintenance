@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost-green.svg)
 ![ISO](https://img.shields.io/badge/Standard-ISO_10816--3-orange.svg)
-![University](https://img.shields.io/badge/University-Burapha_University-red.svg)
+![University](https://img.shields.io/badge/University-Burapha_University-red.svg) 
 
 ## 📖 Overview
 โปรเจกต์นี้เป็นระบบ **การบำรุงรักษาเชิงพยากรณ์ (Predictive Maintenance)** สำหรับเครื่องจักรในอุตสาหกรรม โดยใช้ AI ในการวิเคราะห์และทำนายระดับความรุนแรงของการสั่นสะเทือนล่วงหน้า เพื่อป้องกันการเกิดความเสียหายกะทันหัน (Breakdown) ของเครื่องจักร
