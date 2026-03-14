@@ -60,6 +60,6 @@
 - ❌ **Zone D:** อันตรายมาก ต้องหยุดเครื่องทันที (Unacceptable)
 
 ---
-**Created by:** mmookki2288  
+**Created by: Kanyarak Khabuankla
 **Department:** AI & Data Science, Burapha University  
-**Presentation Date:** March 18, 2026
+
